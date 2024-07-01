@@ -14,13 +14,23 @@
 
 import 'package:flutter/material.dart';
 
+import 'backdrop.dart';
+import 'category_menu_page.dart';
+import 'colors.dart';
 import 'home.dart';
 import 'login.dart';
+import 'model/product.dart';
+import 'supplemental/cut_corners_border.dart';
 
 // TODO: Convert ShrineApp to stateful widget (104)
-class ShrineApp extends StatelessWidget {
+class ShrineApp extends StatefulWidget {
   const ShrineApp({Key? key}) : super(key: key);
 
+  @override
+  State<ShrineApp> createState() => _ShrineAppState();
+}
+
+class _ShrineAppState extends State<ShrineApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
